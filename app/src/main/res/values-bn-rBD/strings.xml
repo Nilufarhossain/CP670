@@ -3,4 +3,8 @@
     <string name="my_app">Assignment 1</string>
     <string name="hello_message">হ্যালো বিশ্ব!</string>
     <string name="ButtonText">I\’m a button</string>
+    <string name="login_text">লগইন</string>
+    <string name="hint_username">ইউজার নেইম লিখুন</string>
+    <string name="password_label">পাসওয়ার্ড</string>
+    <string name="hint_password">পাসওয়ার্ড লিখুন</string>
 </resources>
