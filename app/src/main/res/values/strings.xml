@@ -6,4 +6,8 @@
     <string name="hint_username">Enter your username</string>
     <string name="password_label">password</string>
     <string name="hint_password">Enter your password</string>
+    <string name="option_1">Option 1</string>
+    <string name="check_me">Check me</string>
+    <string name="what_does_this_do">What does this do?</string>
+    <string name="camera_button">Open camera</string>
 </resources>

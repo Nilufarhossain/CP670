@@ -7,4 +7,8 @@
     <string name="hint_username">ইউজার নেইম লিখুন</string>
     <string name="password_label">পাসওয়ার্ড</string>
     <string name="hint_password">পাসওয়ার্ড লিখুন</string>
+    <string name="option_1">অপসন ১</string>
+    <string name="check_me">চেক করুন</string>
+    <string name="what_does_this_do">এটা কি করে?</string>
+    <string name="camera_button">ক্যামেরা বাটন</string>
 </resources>
