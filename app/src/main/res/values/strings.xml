@@ -3,7 +3,7 @@
     <string name="hello_message">Hello World!</string>
     <string name="ButtonText">I\’m a button</string>
     <string name="login_text">Login</string>
-    <string name="hint_username">Enter your username</string>
+    <string name="hint_email">Enter your email</string>
     <string name="password_label">password</string>
     <string name="hint_password">Enter your password</string>
     <string name="option_1">Option 1</string>
