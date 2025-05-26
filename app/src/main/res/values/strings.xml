@@ -10,4 +10,13 @@
     <string name="check_me">Check me</string>
     <string name="what_does_this_do">What does this do?</string>
     <string name="camera_button">Open camera</string>
+    <string name="dialog_message">Do you really want to exit this activity?</string>
+    <string name="dialog_title">Exit Confirmation</string>
+    <string name="ok">Yes</string>
+    <string name="cancel">Cancel</string>
+    <string name="switch_on">Switch is On</string>
+    <string name="switch_off">Switch is Off</string>
+    <string name="no_camera_found">No camera app found</string>
+    <string name="result_message">ListItemsActivity passed: My information to share</string>
+
 </resources>
