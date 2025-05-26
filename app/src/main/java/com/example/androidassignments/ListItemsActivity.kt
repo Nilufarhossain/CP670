@@ -60,8 +60,12 @@ class ListItemsActivity : Activity() {
                     .setTitle(R.string.dialog_title)
                     .setPositiveButton(R.string.ok) { _, _ ->
                         Log.i(TAG, "User confirmed exit")
+                        /*Toast.makeText(this, getString(R.string.dialog_title), Toast.LENGTH_SHORT).show()
+                        finish()*/
+                        val resultIntent = Intent()
+                        resultIntent.putExtra("Response", "Here is my response")
+                        setResult(RESULT_OK, resultIntent)
                         finish()
-                        Toast.makeText(this, getString(R.string.dialog_title), Toast.LENGTH_SHORT).show()
                     }
                     .setNegativeButton(R.string.cancel) { _, _ ->
                         Log.i(TAG, "User canceled exit")
@@ -75,10 +79,10 @@ class ListItemsActivity : Activity() {
     private fun dispatchTakePictureIntent() {
         val takePictureIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
 
-        if (takePictureIntent.resolveActivity(packageManager) == null) {
+       /* if (takePictureIntent.resolveActivity(packageManager) == null) {
             Toast.makeText(this, getString(R.string.no_camera_found), Toast.LENGTH_SHORT).show()
             return
-        }
+        }*/
 
         val photoFile: File? = try {
             createImageFile()
