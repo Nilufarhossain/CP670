@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="my_app">Assignment 1</string>
-    <string name="hello_message">হ্যালো বিশ্ব!</string>
+    <string name="hello_message">হ্যালো িশ্ব!</string>
     <string name="ButtonText">আমি একটি বাটন</string>
     <string name="login_text">লগইন</string>
     <string name="password_label">পাসওয়ার্ড</string>
@@ -14,7 +14,7 @@
     <string name="dialog_message">আপনি কি সিস্টেম বন্ধ করতে চান?</string>
     <string name="dialog_title">কনফার্ম করুন</string>
     <string name="ok">হ্যা</string>
-    <string name="cancel">ক্যান্সেল</string>
+    <string name="cancel">না</string>
     <string name="switch_on">সুইচ চালু হল</string>
     <string name="switch_off">সুইচ বন্ধ হল</string>
     <string name="no_camera_found">ক্যামেরা পাওয়া জাচ্ছে না</string>
