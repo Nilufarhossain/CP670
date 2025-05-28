@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="my_app">Assignment 1</string>
-    <string name="hello_message">হ্যালো বিশ্ব!</string>
-    <string name="ButtonText">I\’m a button</string>
+    <string name="hello_message">হ্যালো িশ্ব!</string>
+    <string name="ButtonText">আমি একটি বাটন</string>
     <string name="login_text">লগইন</string>
-    <string name="hint_username">ইউজার নেইম লিখুন</string>
     <string name="password_label">পাসওয়ার্ড</string>
     <string name="hint_password">পাসওয়ার্ড লিখুন</string>
     <string name="option_1">অপসন ১</string>
     <string name="check_me">চেক করুন</string>
     <string name="what_does_this_do">এটা কি করে?</string>
     <string name="camera_button">ক্যামেরা বাটন</string>
+    <string name="hint_email">ইমেল লিখুন</string>
+    <string name="dialog_message">আপনি কি সিস্টেম বন্ধ করতে চান?</string>
+    <string name="dialog_title">কনফার্ম করুন</string>
+    <string name="ok">হ্যা</string>
+    <string name="cancel">না</string>
+    <string name="switch_on">সুইচ চালু হল</string>
+    <string name="switch_off">সুইচ বন্ধ হল</string>
+    <string name="no_camera_found">ক্যামেরা পাওয়া জাচ্ছে না</string>
+    <string name="result_message">ListItemsActivity passed: My information to share</string>
+
 </resources>
