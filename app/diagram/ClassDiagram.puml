@@ -1,0 +1,22 @@
+@startuml
+
+class MainActivity {
+    +onCreate() : void
+}
+
+class ListItemsActivity {
+    +onCreate() : void
+}
+
+class LoginActivity {
+    -emailField: EditText
+    -passwordField: EditText
+    +onCreate() : void
+    +onStart() : void
+}
+
+MainActivity --> ListItemsActivity
+LoginActivity --|> AppCompatActivity
+LoginActivity --> EditText
+
+@enduml

@@ -7,7 +7,7 @@
     <string name="password_label">password</string>
     <string name="hint_password">Enter your password</string>
     <string name="option_1">Option 1</string>
-    <string name="check_me">Check me</string>
+    <string name="check_me">Exit Activity?</string>
     <string name="what_does_this_do">What does this do?</string>
     <string name="camera_button">Open camera</string>
     <string name="dialog_message">Do you really want to exit this activity?</string>
@@ -18,5 +18,11 @@
     <string name="switch_off">Switch is Off</string>
     <string name="no_camera_found">No camera app found</string>
     <string name="result_message">ListItemsActivity passed: My information to share</string>
+    <string name="start_chat">Start Chat</string>
+    <string name="send">Send</string>
+    <string name="type_message">Type Message</string>
+    <string name="sample_message">Sample Message</string>
+
+
 
 </resources>

@@ -19,5 +19,9 @@
     <string name="switch_off">সুইচ বন্ধ হল</string>
     <string name="no_camera_found">ক্যামেরা পাওয়া জাচ্ছে না</string>
     <string name="result_message">ListItemsActivity passed: My information to share</string>
+    <string name="start_chat">চ্যাট করূণ</string>
+    <string name="send">সেন্ড করুন</string>
+    <string name="type_message">এখানে মেসেজ টাইপ করুন</string>
+    <string name="sample_message">স্যাম্পল মেসেজ</string>
 
 </resources>

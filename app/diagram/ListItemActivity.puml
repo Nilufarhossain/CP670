@@ -1,0 +1,33 @@
+@startuml
+
+package com.example.androidassignments {
+
+class ListItemsActivity {
+    - TAG: String
+    - REQUEST_IMAGE_CAPTURE: Int
+    - imageButton: ImageButton
+    - photoURI: Uri
+
+    + onCreate(savedInstanceState: Bundle)
+    + onStart()
+    + onResume()
+    + onPause()
+    + onStop()
+    + onDestroy()
+
+    + dispatchTakePictureIntent()
+    + createImageFile(): File
+    + onActivityResult(requestCode: Int, resultCode: Int, data: Intent?)
+    + print(message: String)
+    + toggleSwitch(currentState: Boolean): Boolean
+    + isCheckboxChecked(input: Boolean): String
+    + onImageButtonClick(): String
+
+    + companion object {
+        + CAMERA_PERMISSION_REQUEST_CODE: Int
+    }
+}
+
+}
+
+@enduml

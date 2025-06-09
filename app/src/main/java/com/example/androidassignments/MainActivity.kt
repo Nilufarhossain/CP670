@@ -30,7 +30,23 @@ class MainActivity : Activity() {
             insets
         }
 
+        val button = findViewById<Button>(R.id.start_chat_button)
+        button.setOnClickListener {
+            Log.i("MainActivity", "User clicked Start Chat")
+
+            val startChatButton: Button = findViewById(R.id.start_chat_button)
+
+            startChatButton.setOnClickListener {
+                Log.i(TAG, "User clicked Start Chat")
+
+                val intent = Intent(this, activity_chat_window::class.java)
+                startActivity(intent)
+            }
+        }
+
+
     }
+
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 
@@ -53,7 +69,13 @@ class MainActivity : Activity() {
             }
         }
     }
-
+    fun getNavigationTarget(action: String): Class<*>? {
+        return when (action) {
+            "navigate" -> ListItemsActivity::class.java
+            "chat" -> activity_chat_window::class.java
+            else -> null
+        }
+    }
     override fun onStart() {
         super.onStart()
         Log.i(TAG, "onStart called")

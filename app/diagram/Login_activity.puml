@@ -1,0 +1,62 @@
+@startuml
+
+package com.example.androidassignments {
+
+class LoginActivity {
+    - TAG: String
+    - emailField: EditText
+    - loginButton: Button
+    - sharedPreferences: SharedPreferences
+
+    + onCreate(savedInstanceState: Bundle)
+    - saveEmailAndLogin()
+    + onStart()
+    + onResume()
+    + onPause()
+    + onStop()
+    + onDestroy()
+}
+
+class MainActivity {
+    - TAG: String
+
+    + onCreate(savedInstanceState: Bundle)
+    + onActivityResult(requestCode: Int, resultCode: Int, data: Intent?)
+    + getNavigationTarget(action: String): Class<?>
+    + onStart()
+    + onResume()
+    + onPause()
+    + onStop()
+    + onDestroy()
+}
+
+class ListItemsActivity {
+    - TAG: String
+    - REQUEST_IMAGE_CAPTURE: Int
+    - imageButton: ImageButton
+    - photoURI: Uri
+
+    + onCreate(savedInstanceState: Bundle)
+    + onActivityResult(requestCode: Int, resultCode: Int, data: Intent?)
+    + dispatchTakePictureIntent()
+    + createImageFile(): File
+    + toggleSwitch(currentState: Boolean): Boolean
+    + isCheckboxChecked(input: Boolean): String
+    + onImageButtonClick(): String
+    + print(message: String)
+    + onStart()
+    + onResume()
+    + onPause()
+    + onStop()
+    + onDestroy()
+}
+
+class activity_chat_window
+
+LoginActivity --> MainActivity : starts
+MainActivity --> ListItemsActivity : starts
+MainActivity --> activity_chat_window : navigates
+
+}
+
+@enduml

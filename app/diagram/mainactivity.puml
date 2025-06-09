@@ -1,0 +1,26 @@
+@startuml
+
+package com.example.androidassignments {
+
+class MainActivity {
+    - TAG: String
+
+    + onCreate(savedInstanceState: Bundle)
+    + onActivityResult(requestCode: Int, resultCode: Int, data: Intent?)
+    + getNavigationTarget(action: String): Class<?>
+    + onStart()
+    + onResume()
+    + onPause()
+    + onStop()
+    + onDestroy()
+}
+
+class ListItemsActivity
+class activity_chat_window
+
+MainActivity --> ListItemsActivity : starts
+MainActivity --> activity_chat_window : navigates
+
+}
+
+@enduml

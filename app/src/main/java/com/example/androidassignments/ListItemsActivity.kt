@@ -75,6 +75,9 @@ class ListItemsActivity : Activity() {
             }
         }
     }
+    companion object {
+        const val CAMERA_PERMISSION_REQUEST_CODE = 100
+    }
 
     private fun dispatchTakePictureIntent() {
         val takePictureIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
@@ -129,6 +132,22 @@ class ListItemsActivity : Activity() {
     fun print(message: String) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
+
+
+    fun toggleSwitch(currentState: Boolean): Boolean {
+            return !currentState
+    }
+
+    fun isCheckboxChecked(input: Boolean): String {
+            return if (input) "Dialog should show" else "Dialog should not show"
+    }
+
+    fun onImageButtonClick(): String {
+            return "Image button clicked"
+    }
+
+
+
 
     override fun onStart() {
         super.onStart()

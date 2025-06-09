@@ -1,15 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.androidassignments">
-
 
     <uses-feature
         android:name="android.hardware.camera"
         android:required="false" />
 
     <uses-permission android:name="android.permission.CAMERA" />
-
-
     <uses-permission
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         android:maxSdkVersion="28" />
@@ -25,6 +23,14 @@
         android:theme="@style/Theme.AndroidAssignments"
         tools:targetApi="31">
 
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity" />
+
+        <activity
+            android:name=".activity_chat_window"
+            android:parentActivityName=".MainActivity"
+            android:exported="true" />
 
         <provider
             android:name="androidx.core.content.FileProvider"
@@ -36,24 +42,22 @@
                 android:resource="@xml/file_paths" />
         </provider>
 
-
         <activity
             android:name=".ListItemsActivity"
+            android:parentActivityName=".MainActivity"
             android:exported="true" />
-
         <activity
             android:name=".MainActivity"
             android:exported="false" />
-
         <activity
             android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>

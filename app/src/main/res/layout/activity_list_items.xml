@@ -41,7 +41,7 @@
         android:id="@+id/my_checkbox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Exit Activity?" />
+        android:text="@string/check_me" />
 
     <!-- 3. Switch -->
     <Switch

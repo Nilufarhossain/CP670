@@ -1,0 +1,22 @@
+@startuml
+
+class activity_chat_window {
+    -chatListView: ListView
+    -messageBox: EditText
+    -sendButton: Button
+    -chatMessages: ArrayList<String>
+    -messageAdapter: ChatAdapter
+    +onCreate(savedInstanceState: Bundle): void
+}
+
+class ChatAdapter {
+    +getCount(): Int
+    +getItem(position: Int): String
+    +getView(position: Int, convertView: View?, parent: ViewGroup): View
+}
+
+activity_chat_window --> ChatAdapter : Inner class
+activity_chat_window --|> AppCompatActivity
+
+
+@enduml
