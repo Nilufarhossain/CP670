@@ -14,26 +14,24 @@
         android:icon="@drawable/icon_edit"
         android:orderInCategory="101"
         app:showAsAction="always" />
-    <item
-        android:id="@+id/action_three"
-        android:title="Choice_4"
-        android:icon="@drawable/chaticon"
-        android:orderInCategory="103"
-        app:showAsAction="always"/>
 
     <item
-        android:id="@+id/action_four"
+        android:id="@+id/action_three"
         android:title="Choice 3"
-        android:icon="@drawable/icon_delete"
+        android:icon="@drawable/chaticon"
         android:orderInCategory="102"
         app:showAsAction="always" />
 
+    <item
+        android:id="@+id/action_four"
+        android:title="Choice 4"
+        android:icon="@drawable/icon_delete"
+        android:orderInCategory="103"
+        app:showAsAction="always" />
 
     <item
         android:id="@+id/action_about"
         android:title="About"
         android:orderInCategory="104"
-        android:icon="@drawable/baseline_more_vert_24"
-        app:showAsAction="never"/>
-
+        app:showAsAction="never" />
 </menu>
