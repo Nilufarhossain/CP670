@@ -44,7 +44,11 @@ class MainActivity : Activity() {
             }
         }
 
-
+        val testToolbarButton = findViewById<Button>(R.id.test_toolbar_button)
+        testToolbarButton.setOnClickListener {
+            val intent = Intent(this, TestToolbar::class.java)
+            startActivity(intent)
+        }
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {

@@ -12,38 +12,40 @@
         android:layout_width="195dp"
         android:layout_height="41dp"
         android:text="@string/hello_message"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.286" />
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+        app:layout_constraintHorizontal_bias="0.5" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="149dp"
         android:layout_height="55dp"
         android:text="@string/ButtonText"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintTop_toBottomOf="@id/textView"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.478" />
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/test_toolbar_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Test Toolbar"
+        app:layout_constraintTop_toBottomOf="@id/button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_margin="16dp" />
 
     <Button
         android:id="@+id/start_chat_button"
         android:layout_width="153dp"
         android:layout_height="57dp"
-        android:layout_gravity="center"
         android:text="@string/start_chat"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintTop_toBottomOf="@id/test_toolbar_button"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.598"
-        tools:ignore="MissingConstraints" />
-
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_margin="16dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

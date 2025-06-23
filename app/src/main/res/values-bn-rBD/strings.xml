@@ -23,5 +23,6 @@
     <string name="send">সেন্ড করুন</string>
     <string name="type_message">এখানে মেসেজ টাইপ করুন</string>
     <string name="sample_message">স্যাম্পল মেসেজ</string>
+    <string name="icon_desc">আইকন</string>
 
 </resources>
