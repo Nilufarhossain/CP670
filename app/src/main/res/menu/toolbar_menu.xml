@@ -5,29 +5,23 @@
         android:id="@+id/action_one"
         android:title="Choice 1"
         android:icon="@drawable/icon_add"
-        android:orderInCategory="100"
+        android:orderInCategory="101"
         app:showAsAction="always" />
 
     <item
         android:id="@+id/action_two"
         android:title="Choice 2"
         android:icon="@drawable/icon_edit"
-        android:orderInCategory="101"
+        android:orderInCategory="102"
         app:showAsAction="always" />
 
     <item
         android:id="@+id/action_three"
         android:title="Choice 3"
         android:icon="@drawable/chaticon"
-        android:orderInCategory="102"
-        app:showAsAction="always" />
-
-    <item
-        android:id="@+id/action_four"
-        android:title="Choice 4"
-        android:icon="@drawable/icon_delete"
         android:orderInCategory="103"
         app:showAsAction="always" />
+
 
     <item
         android:id="@+id/action_about"

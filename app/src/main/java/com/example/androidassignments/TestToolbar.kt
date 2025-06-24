@@ -28,7 +28,7 @@ class TestToolbar : AppCompatActivity() {
         val fab = findViewById<FloatingActionButton>(R.id.fab)
         fab.setOnClickListener {
 
-            Snackbar.make(it, "My Meassage!", Snackbar.LENGTH_LONG).show()
+            Snackbar.make(it, "My custom snackbar message!", Snackbar.LENGTH_LONG).show()
         }
     }
 
@@ -63,7 +63,7 @@ class TestToolbar : AppCompatActivity() {
             }
 
             R.id.action_about -> {
-                Toast.makeText(this, "Version 1.0, by Your Name", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Version 1.0, by Nilufar", Toast.LENGTH_SHORT).show()
                 true
             }
 
@@ -94,8 +94,10 @@ class TestToolbar : AppCompatActivity() {
         builder.setNegativeButton("Cancel", null)
         builder.show()
     }
-    fun getSnackbarMessage(): String {
-        return if (!newMessage.isNullOrEmpty()) newMessage!! else "No message set"
+    companion object {
+        fun getSnackbarMessage(message: String?): String {
+            return if (!message.isNullOrEmpty()) message else "No message set"
+        }
     }
 }
 

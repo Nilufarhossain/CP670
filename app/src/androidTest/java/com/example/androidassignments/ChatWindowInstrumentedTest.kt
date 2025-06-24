@@ -20,6 +20,7 @@ class ChatWindowInstrumentedTest {
 
     @Test
     fun testSendMessageUpdatesList() {
+        Thread.sleep(500)
         onView(withId(R.id.message_box))
             .perform(typeText("Hello from Espresso!"), closeSoftKeyboard())
         onView(withId(R.id.send_button)).perform(click())
@@ -30,6 +31,7 @@ class ChatWindowInstrumentedTest {
 
     @Test
     fun testSendEmptyMessageDoesNothing() {
+        Thread.sleep(500)
         onView(withId(R.id.message_box))
             .perform(typeText("   "), closeSoftKeyboard())
         onView(withId(R.id.send_button)).perform(click())
